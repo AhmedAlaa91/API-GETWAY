@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-dispatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --config .prettierrc \"**/*.ts\" --write",
+    "lint": "eslint \"**/*.ts\"",
+    "lint:f": "eslint src/*.ts --fix",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "nodemon src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/mssql": "^8.1.2",
+    "@types/node-fetch": "^2.6.4",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "msnodesqlv8": "^2.7.0",
+    "mssql": "^4.3.9",
+    "node-fetch": "^2.6.12",
+    "ts-node": "^10.9.1"
+  }
+}
